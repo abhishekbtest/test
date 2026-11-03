@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build towers, parks, and transit in a pocket-sized pixel metropolis.">
+  <title>Neon City — Terraforge</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body class="terrain-body" data-terrain="city" data-resource="credits">
+  <a class="skip-link" href="#builder">Skip to city builder</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Terraforge world map"><span class="brand-gem">◆</span> TERRA<span>FORGE</span></a>
+    <div class="status-pill"><i></i> DISTRICT: ONLINE</div>
+    <button class="sound-toggle" data-sound aria-pressed="true" aria-label="Toggle game sounds">♫ ON</button>
+  </header>
+  <nav class="game-nav" aria-label="Terrain worlds">
+    <a href="index.html">⌂ ATLAS</a>
+    <a href="mountain.html">MOUNTAIN</a>
+    <a href="ocean.html">OCEAN</a>
+    <a href="desert.html">DESERT</a>
+    <a href="island.html">ISLAND</a>
+    <a href="city.html" aria-current="page">NEON CITY</a>
+  </nav>
+
+  <main id="builder">
+    <section class="terrain-intro">
+      <div>
+        <div class="eyebrow">REALM 05 / MIDNIGHT METRO</div>
+        <h1>NEON<br>CITY</h1>
+        <p>Plan upward, leave room to breathe, and connect every glowing block. Your pocket metropolis wakes when the sun goes down.</p>
+      </div>
+      <div class="stats" aria-label="City statistics">
+        <div class="stat"><small>CREDITS</small><strong data-resource-count>24</strong></div>
+        <div class="stat"><small>BUILT</small><strong data-population>0</strong></div>
+        <div class="stat"><small>POWER</small><strong>98%</strong></div>
+      </div>
+    </section>
+
+    <section class="game-shell" aria-label="Neon City creation area">
+      <div class="world-stage" aria-label="Interactive pixel city world">
+        <div class="scenery" aria-hidden="true">
+          <span class="pixel-sun" style="background:#ff4dba;box-shadow:8px 0 #ff4dba,-8px 0 #ff4dba,0 8px #ff4dba,0 -8px #ff4dba"></span>
+          <span style="position:absolute;left:4%;bottom:39%;width:14%;height:27%;background:#282d66;box-shadow:inset 10px 8px #36d9ff, 5px 0 #151826"></span>
+          <span style="position:absolute;left:20%;bottom:39%;width:12%;height:39%;background:#424b8f;box-shadow:inset 8px 16px #f14ba8, 5px 0 #151826"></span>
+          <span style="position:absolute;right:25%;bottom:39%;width:16%;height:32%;background:#323a79;box-shadow:inset 14px 9px #ffe45d, 5px 0 #151826"></span>
+          <span style="position:absolute;right:6%;bottom:39%;width:17%;height:46%;background:#22285e;box-shadow:inset 12px 20px #42eff5, 5px 0 #151826"></span>
+          <span style="position:absolute;left:0;right:0;bottom:23%;height:9%;background:#171a36;border-top:5px solid #ff4db5;border-bottom:5px solid #39dcff"></span>
+          <span style="position:absolute;left:7%;right:7%;bottom:8%;height:7%;background:#171a36;transform:skewX(-35deg);border-top:3px dashed #ffe25a"></span>
+        </div>
+        <div class="world-grid" data-world-grid aria-live="polite" aria-label="Your city creations"></div>
+      </div>
+
+      <aside class="toolbar" aria-labelledby="palette-title">
+        <div class="eyebrow">CITY PLANNER / 05</div>
+        <h2 id="palette-title">BUILD PALETTE</h2>
+        <p class="toolbar-note">Choose a structure, then press build. Tap anything in the world to recycle it.</p>
+        <div class="palette" role="group" aria-label="City build choices">
+          <button class="item-button selected" type="button" data-item="tower" aria-pressed="true">
+            <span class="icon" aria-hidden="true">🏢</span><span><b>SKY TOWER</b><br><small>HOMES + LIGHT</small></span><small>2¢</small>
+          </button>
+          <button class="item-button" type="button" data-item="park" aria-pressed="false">
+            <span class="icon" aria-hidden="true">🌳</span><span><b>POCKET PARK</b><br><small>AIR + JOY</small></span><small>2¢</small>
+          </button>
+          <button class="item-button" type="button" data-item="transit" aria-pressed="false">
+            <span class="icon" aria-hidden="true">🚈</span><span><b>NEON TRANSIT</b><br><small>LINK BLOCKS</small></span><small>2¢</small>
+          </button>
+        </div>
+        <button class="build-button" type="button">+ BUILD SELECTED</button>
+        <div class="selection" aria-live="polite">ACTIVE BLUEPRINT<br><strong data-selected-label>TOWER</strong></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><span>REALM 05 / 05</span><span>MAKE SPACE FOR <em>EVERYONE.</em></span><a href="index.html">RETURN TO ATLAS →</a></footer>
+  <script src="world.js"></script>
+</body>
+</html>

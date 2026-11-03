@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dive into Pixel Realms and grow a living ocean world.">
+  <title>Ocean Realm | Pixel Realms</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body data-terrain="ocean" data-resource="pearls">
+  <a class="skip-link" href="#world">Skip to ocean world</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pixel Realms home">
+      <span class="brand-mark" aria-hidden="true">◆</span>
+      <span>PIXEL REALMS</span>
+    </a>
+    <nav class="terrain-nav" aria-label="Explore terrain realms">
+      <a href="mountain.html">Mountain</a>
+      <a class="active" href="ocean.html" aria-current="page">Ocean</a>
+      <a href="desert.html">Desert</a>
+      <a href="island.html">Island</a>
+      <a href="city.html">City</a>
+    </nav>
+    <a class="home-button" href="index.html">World Map</a>
+  </header>
+
+  <main id="world">
+    <section class="terrain-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">REALM 02 · TIDAL EXPANSE</p>
+        <h1>Grow the <span>deep blue.</span></h1>
+        <p>Shape a tiny ocean into a bright, living reef. Place coral, welcome schools of fish, and raise reef towers from the seabed.</p>
+      </div>
+      <div class="realm-stats" aria-label="Ocean statistics">
+        <div><span class="stat-icon" aria-hidden="true">◈</span><strong data-resource-count>120</strong><small>Pearls</small></div>
+        <div><span class="stat-icon" aria-hidden="true">♒</span><strong data-population>0</strong><small>Sea life</small></div>
+        <div><span class="stat-icon" aria-hidden="true">☼</span><strong>24°</strong><small>Water</small></div>
+      </div>
+    </section>
+
+    <section class="builder-layout" aria-labelledby="builder-title">
+      <aside class="build-panel">
+        <div class="panel-heading">
+          <p class="eyebrow">BUILD PALETTE</p>
+          <h2 id="builder-title">Ocean kit</h2>
+          <p>Choose an item, then tap an open water tile to place it.</p>
+        </div>
+        <div class="item-list" role="group" aria-label="Ocean items">
+          <button class="item-button selected" type="button" data-action="add" data-item="coral" aria-pressed="true">
+            <span class="item-pixel pixel-coral" aria-hidden="true">♣</span>
+            <span><strong>Sun Coral</strong><small>20 pearls</small></span>
+          </button>
+          <button class="item-button" type="button" data-action="add" data-item="fish" aria-pressed="false">
+            <span class="item-pixel pixel-fish" aria-hidden="true">◀</span>
+            <span><strong>Reef Fish</strong><small>10 pearls</small></span>
+          </button>
+          <button class="item-button" type="button" data-action="add" data-item="reef" aria-pressed="false">
+            <span class="item-pixel pixel-reef" aria-hidden="true">▥</span>
+            <span><strong>Reef Tower</strong><small>35 pearls</small></span>
+          </button>
+        </div>
+        <div class="selection-readout" aria-live="polite">
+          <span>Ready to place</span>
+          <strong data-selected-label>Sun Coral</strong>
+        </div>
+        <p class="panel-tip"><span aria-hidden="true">!</span> Every fish adds motion to your reef. Coral and reef towers create habitats.</p>
+      </aside>
+
+      <div class="world-card ocean-world">
+        <div class="world-toolbar">
+          <div>
+            <span class="status-dot" aria-hidden="true"></span>
+            <strong>Azure Trench</strong>
+            <small>LIVE WORLD</small>
+          </div>
+          <p><kbd>Click</kbd> a tile to build</p>
+        </div>
+        <div class="world-stage" aria-label="Interactive pixel ocean">
+          <div class="ocean-sky" aria-hidden="true">
+            <span class="sunbeam beam-one"></span>
+            <span class="sunbeam beam-two"></span>
+            <span class="bubble bubble-one"></span>
+            <span class="bubble bubble-two"></span>
+            <span class="bubble bubble-three"></span>
+          </div>
+          <div class="distant-reef" aria-hidden="true">
+            <span class="kelp k1"></span><span class="kelp k2"></span><span class="kelp k3"></span>
+            <span class="rock r1"></span><span class="rock r2"></span>
+          </div>
+          <div class="world-grid" data-world-grid role="grid" aria-label="Ocean building grid">
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+            <button class="world-tile" type="button" role="gridcell" aria-label="Empty ocean tile"></button>
+          </div>
+          <div class="seabed" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+        <div class="world-footer">
+          <span><i class="legend-swatch buildable"></i> Buildable water</span>
+          <span><i class="legend-swatch occupied"></i> Your creation</span>
+          <button type="button" data-action="reset">Reset realm</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="realm-lore" aria-label="Ocean realm mission">
+      <p class="eyebrow">CURRENT QUEST</p>
+      <h2>Bring the reef back to life.</h2>
+      <p>Place three different sea-life forms to complete the first chapter of your ocean story.</p>
+      <div class="quest-progress"><span aria-hidden="true"></span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>PIXEL REALMS <span>·</span> BUILD YOUR WORLD</p>
+    <a href="city.html">Next realm: Neon City →</a>
+  </footer>
+  <script src="world.js" defer></script>
+</body>
+</html>

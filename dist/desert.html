@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9a942">
+  <meta name="description" content="Build a thriving pixel settlement among the dunes of the Sunshard Desert.">
+  <title>Sunshard Desert | TerraCraft</title>
+  <link rel="stylesheet" href="shared.css">
+  <script src="world.js" defer></script>
+</head>
+<body data-terrain="desert" data-resource="sun shards">
+  <a class="skip-link" href="#world">Skip to the world</a>
+
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="TerraCraft world map">
+      <span class="brand-mark" aria-hidden="true">◆</span>
+      <span>TERRACRAFT</span>
+    </a>
+    <nav class="terrain-nav" aria-label="Explore terrains">
+      <a href="mountain.html">Mountain</a>
+      <a href="ocean.html">Ocean</a>
+      <a class="active" href="desert.html" aria-current="page">Desert</a>
+      <a href="island.html">Island</a>
+      <a href="city.html">City</a>
+    </nav>
+    <a class="map-link" href="index.html">World map <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="world" class="terrain-page desert-page">
+    <section class="terrain-intro" aria-labelledby="terrain-title">
+      <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Biome 03 / Golden Expanse</div>
+      <h1 id="terrain-title">Sunshard<br><span>Desert</span></h1>
+      <p>Shape a settlement where the dunes never sleep. Plant hardy life, raise cool adobe homes, and uncover the desert's bright energy.</p>
+      <div class="terrain-stats" aria-label="World statistics">
+        <div><span class="stat-icon" aria-hidden="true">✦</span><strong data-resource-count>120</strong><small>Sun shards</small></div>
+        <div><span class="stat-icon" aria-hidden="true">♟</span><strong data-population>0</strong><small>Settlers</small></div>
+        <div><span class="stat-icon" aria-hidden="true">☀</span><strong>38°</strong><small>Day heat</small></div>
+      </div>
+    </section>
+
+    <section class="builder-shell" aria-labelledby="builder-title">
+      <div class="builder-heading">
+        <div>
+          <p class="kicker">Live world editor</p>
+          <h2 id="builder-title">Build among the dunes</h2>
+        </div>
+        <p class="selection-readout">Selected: <strong data-selected-label>Oasis</strong></p>
+      </div>
+
+      <div class="world-stage desert-stage" aria-label="Interactive pixel desert">
+        <div class="pixel-sun" aria-hidden="true"></div>
+        <div class="heat-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="cloud cloud-one" aria-hidden="true"></div>
+        <div class="mesa mesa-far" aria-hidden="true"></div>
+        <div class="mesa mesa-near" aria-hidden="true"></div>
+        <div class="dune dune-back" aria-hidden="true"></div>
+        <div class="dune dune-front" aria-hidden="true"></div>
+        <div class="desert-ruin" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="world-grid" data-world-grid role="group" aria-label="Build area. Select an item below, then choose a tile."></div>
+        <div class="stage-caption">
+          <span><i class="live-dot" aria-hidden="true"></i> World awake</span>
+          <span>Click any tile to place</span>
+        </div>
+      </div>
+
+      <div class="build-dock">
+        <div class="palette" role="group" aria-label="Things to build">
+          <button class="item-button selected" type="button" data-action="add" data-item="oasis" aria-pressed="true">
+            <span class="item-preview oasis-preview" aria-hidden="true">≈</span>
+            <span><strong>Oasis</strong><small>30 shards</small></span>
+          </button>
+          <button class="item-button" type="button" data-action="add" data-item="adobe" aria-pressed="false">
+            <span class="item-preview adobe-preview" aria-hidden="true">▥</span>
+            <span><strong>Adobe home</strong><small>45 shards</small></span>
+          </button>
+          <button class="item-button" type="button" data-action="add" data-item="cactus" aria-pressed="false">
+            <span class="item-preview cactus-preview" aria-hidden="true">Ψ</span>
+            <span><strong>Cactus</strong><small>10 shards</small></span>
+          </button>
+        </div>
+        <div class="builder-tip">
+          <span aria-hidden="true">⌁</span>
+          <p><strong>Desert wisdom</strong>Oases attract settlers. Cacti slowly grow new sun shards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="terrain-notes" aria-labelledby="field-notes-title">
+      <p class="section-number">03</p>
+      <div>
+        <p class="kicker">Explorer's log</p>
+        <h2 id="field-notes-title">Life finds a way through the sand.</h2>
+      </div>
+      <p>The Sunshard Desert rewards balance: water gives life, shelter grows community, and native plants keep your resources flowing.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>TerraCraft <span aria-hidden="true">•</span> Shape small worlds</p>
+    <a href="island.html">Next biome: Tropical Island <span aria-hidden="true">→</span></a>
+  </footer>
+  <noscript><p class="noscript">Enable JavaScript to place objects and save your desert world.</p></noscript>
+</body>
+</html>

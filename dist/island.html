@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a bright pixel paradise of palms, huts, and lagoons.">
+  <title>Tropical Island — Terraforge</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body class="terrain-body" data-terrain="island" data-resource="shells">
+  <a class="skip-link" href="#builder">Skip to island builder</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Terraforge world map"><span class="brand-gem">◆</span> TERRA<span>FORGE</span></a>
+    <div class="status-pill"><i></i> ISLAND SIGNAL: CLEAR</div>
+    <button class="sound-toggle" data-sound aria-pressed="true" aria-label="Toggle game sounds">♫ ON</button>
+  </header>
+  <nav class="game-nav" aria-label="Terrain worlds">
+    <a href="index.html">⌂ ATLAS</a>
+    <a href="mountain.html">△ MOUNTAIN</a>
+    <a href="ocean.html">≈ OCEAN</a>
+    <a href="desert.html">◇ DESERT</a>
+    <a href="island.html" aria-current="page">♧ ISLAND</a>
+    <a href="city.html">▥ CITY</a>
+  </nav>
+
+  <main id="builder">
+    <section class="terrain-intro">
+      <div>
+        <div class="eyebrow">REALM 04 / SUNKISSED ARCHIPELAGO</div>
+        <h1>ISLAND<br>HIDEAWAY</h1>
+        <p>Turn a speck of sand into a living paradise. Plant palms, raise cozy huts, and invite playful lagoon life to your shore.</p>
+      </div>
+      <div class="stats" aria-label="Island statistics">
+        <div class="stat"><small>SHELLS</small><strong data-resource-count>24</strong></div>
+        <div class="stat"><small>CREATIONS</small><strong data-population>0</strong></div>
+        <div class="stat"><small>TIDE</small><strong>HIGH</strong></div>
+      </div>
+    </section>
+
+    <section class="game-shell" aria-label="Tropical island world builder">
+      <div class="world-stage" aria-label="Interactive pixel island scene">
+        <div class="scenery" aria-hidden="true">
+          <span class="pixel-sun"></span>
+          <span class="cloud"></span><span class="cloud c2"></span>
+          <span style="position:absolute;bottom:29%;left:8%;width:84%;height:11%;background:#f4d36c;border-radius:50%;box-shadow:0 20px 0 #f4d36c"></span>
+          <span style="position:absolute;bottom:36%;left:27%;width:12px;height:105px;background:#7c4e31;transform:rotate(-8deg);box-shadow:-32px -8px #34a65f,24px -27px #34a65f,2px -43px #34a65f"></span>
+          <span style="position:absolute;bottom:39%;right:23%;width:10px;height:76px;background:#7c4e31;transform:rotate(10deg);box-shadow:-25px -10px #38b96b,20px -22px #38b96b"></span>
+          <span style="position:absolute;bottom:0;left:0;width:100%;height:27%;background:#238acb;opacity:.9"></span>
+        </div>
+        <div class="world-grid" data-world-grid aria-live="polite" aria-label="Your island creations"></div>
+      </div>
+
+      <aside class="toolbar" aria-labelledby="palette-title">
+        <div class="eyebrow">BUILD KIT / 03 ITEMS</div>
+        <h2 id="palette-title">MAKE YOUR PARADISE</h2>
+        <p class="toolbar-note">Pick a creation, then press build. Each one costs 2 shells. Tap a creation to recycle it.</p>
+        <div class="palette" role="group" aria-label="Island creations">
+          <button class="item-button selected" type="button" data-item="palm" aria-pressed="true">
+            <span class="icon" aria-hidden="true">🌴</span><b>COCONUT PALM</b><small>2 ◇</small>
+          </button>
+          <button class="item-button" type="button" data-item="hut" aria-pressed="false">
+            <span class="icon" aria-hidden="true">🛖</span><b>BEACH HUT</b><small>2 ◇</small>
+          </button>
+          <button class="item-button" type="button" data-item="lagoon" aria-pressed="false">
+            <span class="icon" aria-hidden="true">🐬</span><b>LAGOON FRIEND</b><small>2 ◇</small>
+          </button>
+        </div>
+        <button class="build-button" type="button">+ BUILD SELECTED</button>
+        <div class="selection" aria-live="polite">SELECTED: <strong data-selected-label>PALM</strong><br><br>TIP: Mix all three to unlock the perfect-island story.</div>
+      </aside>
+    </section>
+  </main>
+
+  <footer><span>REALM 04 / 05</span><span>KEEP THE TIDE <em>WILD.</em></span><a href="city.html">NEXT: NEON CITY →</a></footer>
+  <script src="world.js"></script>
+</body>
+</html>

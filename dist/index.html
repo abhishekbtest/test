@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terraforge is a tiny pixel world builder spanning five living terrains.">
+  <title>Terraforge — Choose Your World</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body class="home" data-terrain="atlas" data-resource="world sparks">
+  <a class="skip-link" href="#main">Skip to worlds</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Terraforge home"><span class="brand-gem">◆</span> TERRA<span>FORGE</span></a>
+    <div class="status-pill"><i></i> WORLD SERVER: ONLINE</div>
+    <button class="sound-toggle" data-sound aria-pressed="true" aria-label="Toggle game sounds">♫ ON</button>
+  </header>
+  <main id="main">
+    <section class="atlas-hero">
+      <div class="eyebrow">✦ WORLD BUILDER / SEASON 01</div>
+      <h1>FIVE WORLDS.<br><em>ONE IMAGINATION.</em></h1>
+      <p>Choose a realm, gather its rare resources, and build a tiny civilization one pixel at a time.</p>
+      <div class="key-hint"><kbd>1—5</kbd> PICK WORLD <kbd>ENTER</kbd> EXPLORE</div>
+    </section>
+    <section class="world-select" aria-labelledby="select-title">
+      <div class="section-heading"><span>01</span><h2 id="select-title">SELECT A TERRAIN</h2><b>5 BIOMES DISCOVERED</b></div>
+      <div class="terrain-cards">
+        <a class="terrain-card mountain" href="mountain.html" data-key="1"><span class="card-no">01</span><div class="mini-scene"><i class="sun"></i><i class="mount m1"></i><i class="mount m2"></i></div><h3>MOUNTAIN</h3><p>Raise cabins and peaks above the cloudline.</p><small>CRYSTALS · PINES · SNOW</small><strong>EXPLORE →</strong></a>
+        <a class="terrain-card ocean" href="ocean.html" data-key="2"><span class="card-no">02</span><div class="mini-scene"><i class="sun"></i><i class="wave w1"></i><i class="wave w2"></i><i class="fish-pixel"></i></div><h3>OCEAN</h3><p>Grow a reef and fill the blue with life.</p><small>PEARLS · CORAL · CURRENTS</small><strong>DIVE IN →</strong></a>
+        <a class="terrain-card desert" href="desert.html" data-key="3"><span class="card-no">03</span><div class="mini-scene"><i class="sun"></i><i class="dune d1"></i><i class="dune d2"></i><i class="cactus-pixel"></i></div><h3>DESERT</h3><p>Turn sun-baked dunes into an oasis.</p><small>SHARDS · CACTI · SAND</small><strong>VENTURE →</strong></a>
+        <a class="terrain-card island" href="island.html" data-key="4"><span class="card-no">04</span><div class="mini-scene"><i class="sun"></i><i class="isle"></i><i class="palm-pixel"></i></div><h3>TROPICAL ISLAND</h3><p>Plant a bright refuge between the tides.</p><small>SHELLS · PALMS · FRUIT</small><strong>SET SAIL →</strong></a>
+        <a class="terrain-card city" href="city.html" data-key="5"><span class="card-no">05</span><div class="mini-scene"><i class="sun"></i><i class="tower t1"></i><i class="tower t2"></i><i class="tower t3"></i></div><h3>NEON CITY</h3><p>Stack a skyline that never sleeps.</p><small>CREDITS · TOWERS · LIGHT</small><strong>ENTER →</strong></a>
+      </div>
+    </section>
+  </main>
+  <footer><span>© 20XX TERRA COLLECTIVE</span><span>BUILD SMALL. DREAM <em>BIG.</em></span><span>V.1.0.5</span></footer>
+  <script src="world.js"></script>
+</body>
+</html>

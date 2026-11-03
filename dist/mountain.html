@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172339">
+  <meta name="description" content="Shape a snowy pixel mountain settlement in Terrain Forge.">
+  <title>Frostpeak Range · Terrain Forge</title>
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body data-terrain="mountain" data-resource="crystal">
+  <a class="skip-link" href="#world">Skip to world</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Terrain Forge home">
+      <span class="brand-mark" aria-hidden="true">◆</span>
+      <span>TERRAIN FORGE</span>
+    </a>
+    <nav class="terrain-nav" aria-label="Terrain worlds">
+      <a href="mountain.html" aria-current="page">Mountain</a>
+      <a href="ocean.html">Ocean</a>
+      <a href="desert.html">Desert</a>
+      <a href="island.html">Island</a>
+      <a href="city.html">City</a>
+    </nav>
+    <a class="home-chip" href="index.html">World Map</a>
+  </header>
+
+  <main id="world" class="terrain-page terrain-mountain">
+    <section class="terrain-intro" aria-labelledby="terrain-title">
+      <div class="eyebrow"><span class="status-dot"></span> REGION 01 · ALPINE</div>
+      <h1 id="terrain-title">FROSTPEAK<br><span>RANGE</span></h1>
+      <p>Carve a settlement above the clouds. Raise cabins, plant hardy pines, and shape new summits one crystal at a time.</p>
+      <div class="terrain-stats" aria-label="World status">
+        <div class="stat-card"><span>CRYSTALS</span><strong data-resource-count>120</strong></div>
+        <div class="stat-card"><span>SETTLERS</span><strong data-population>08</strong></div>
+        <div class="stat-card weather"><span>WEATHER</span><strong>−12° ❄</strong></div>
+      </div>
+    </section>
+
+    <section class="game-shell" aria-label="Mountain world builder">
+      <div class="game-toolbar">
+        <div>
+          <span class="toolbar-label">ACTIVE TOOL</span>
+          <strong data-selected-label>Cabin</strong>
+        </div>
+        <p>Choose an item, then tap an open tile to build.</p>
+        <button class="icon-button" type="button" data-action="reset" aria-label="Reset mountain world" title="Reset world">↻</button>
+      </div>
+
+      <div class="world-stage mountain-stage" data-world-grid tabindex="0" aria-label="Interactive snowy mountain build grid">
+        <div class="sky-glow" aria-hidden="true"></div>
+        <div class="pixel-cloud cloud-one" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="pixel-cloud cloud-two" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="mountain-layer far" aria-hidden="true">
+          <span class="summit summit-a"></span><span class="summit summit-b"></span><span class="summit summit-c"></span>
+        </div>
+        <div class="mountain-layer near" aria-hidden="true">
+          <span class="summit summit-a"></span><span class="summit summit-b"></span><span class="summit summit-c"></span>
+        </div>
+        <div class="snow-field" aria-hidden="true"></div>
+        <div class="starter-building pixel-object cabin" style="--x:26%;--y:64%" aria-label="Starter cabin"><span></span></div>
+        <div class="starter-tree pixel-object pine" style="--x:68%;--y:58%" aria-label="Pine tree"><span></span></div>
+        <div class="starter-tree pixel-object pine small" style="--x:78%;--y:70%" aria-label="Small pine tree"><span></span></div>
+        <div class="build-grid" aria-hidden="true"></div>
+        <div class="world-hint">TAP GRID TO PLACE</div>
+      </div>
+
+      <aside class="build-dock" aria-label="Mountain build palette">
+        <div class="dock-heading">
+          <span>BUILD PALETTE</span>
+          <small>Each placement costs crystals</small>
+        </div>
+        <div class="item-list">
+          <button class="item-button selected" type="button" data-action="add" data-item="cabin" data-cost="20" aria-pressed="true">
+            <span class="item-icon cabin-icon" aria-hidden="true">⌂</span>
+            <span><strong>Cabin</strong><small>20 ◆</small></span>
+          </button>
+          <button class="item-button" type="button" data-action="add" data-item="pine" data-cost="8" aria-pressed="false">
+            <span class="item-icon pine-icon" aria-hidden="true">♠</span>
+            <span><strong>Pine</strong><small>8 ◆</small></span>
+          </button>
+          <button class="item-button" type="button" data-action="add" data-item="peak" data-cost="35" aria-pressed="false">
+            <span class="item-icon peak-icon" aria-hidden="true">▲</span>
+            <span><strong>Peak</strong><small>35 ◆</small></span>
+          </button>
+        </div>
+        <div class="dock-tip"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><span>Quick select</span></div>
+      </aside>
+      <div class="toast" data-toast role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="mission-strip" aria-label="Mountain mission">
+      <span class="mission-badge">NEW QUEST</span>
+      <div><strong>THE HIGH SHELTER</strong><p>Build 3 cabins and surround them with 5 pines.</p></div>
+      <div class="quest-progress" aria-label="Quest progress"><span data-quest-progress style="--progress:20%"></span></div>
+      <b data-quest-count>1 / 8</b>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>FROSTPEAK RANGE · SECTOR 01</span><span>WORLD SAVED LOCALLY</span></footer>
+  <script src="world.js" defer></script>
+</body>
+</html>
